@@ -16,6 +16,6 @@
 - Must use OOP in backend
 - Must support Responsive
 
-##IDE
+## IDE
 We have decided to use Visual Studio Code as our IDE because it is widely used and can be easily integrated with Git. You can download the installation file for your operating system (Windows, macOS, or Linux) from the official VSCode website (https://code.visualstudio.com/), and then follow the installation prompts to complete the process.
 
