@@ -1,0 +1,288 @@
+.login-form-loading-container{
+  width: 100%;
+  height: 100%;
+  background-color: var(--LightGray);
+  z-index: 40;
+  position: absolute;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 400px;
+    height: 300px;
+  }
+
+}
+.btn-login-container{
+    padding-top: 20px;
+    button{
+        font-family: 'Montserrat';
+        font-size: 24px;
+        color: var(--White);
+        height: 48px;
+        border: none;
+        border-radius: 24px;
+        background-color: var(--Pink);
+        float: right;
+        padding-left: 48px;
+        padding-right: 48px;
+        text-align: center;
+        transition-duration: 0.4s;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.4s ease;
+    }
+    button:hover{
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+    }
+}
+.mymodal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 24px;
+    outline: none;
+    padding: 0;
+    width: 68vw;
+    height: 84vh;
+    overflow: auto;
+  }
+  
+  .myoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .login-modal-body{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #btn-close-login{
+    border: none;
+    background: none;
+    position: absolute;
+    top:24px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    padding: 0;
+    background-color: var(--White) !important;
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .login-form-bounder{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 24px;
+    padding-left: 48px;
+  }
+  #login-title{
+    font-family: 'MontserratMedium';
+    color: var(--Pink);
+    font-size: 36px;
+  }
+
+  #login-sub-title{
+    font-family: 'MontserratRegular';
+    color: var(--Darkest);
+    font-size: 12px;
+    display: block;
+    margin-bottom: 24px;
+  }
+  
+
+  .login-form{
+    font-family: 'MontserratRegular';
+    color: var(--Darkest);
+    label{
+      font-family: 'MontserratMedium';
+      font-size: 24px;
+    }
+    input{
+      height: 40px;
+      border-radius: 24px;
+      border: none;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.4s ease;
+      background-color: var(--White);
+      font-size: 12px;
+      margin-top: 8px;
+    }
+    #InputUserName{
+      margin-bottom: 12px;
+    }
+    #InputPasswordLogin{
+      margin-bottom: 8px;
+    }
+    input:focus{
+      outline: none;
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+    }
+    .login-form-hide{
+      color: var(--DarkOrange);
+      font-size: 12px;
+    }
+    .login-form-hide:hover{
+      color: var(--Orange);
+    }
+
+    .with-left{
+      color: var(--Darkest);
+    }
+    .with-left:hover{
+      color: var(--DarkGreen);
+    }
+
+    .login-form-highlight{
+      color: var(--DarkOrange);
+    }
+    .login-form-highlight:hover{
+      color: var(--Orange);
+      cursor: pointer;
+    }
+    button{
+      padding-left: 48px;
+      padding-right: 48px;
+      border: none;
+      border-radius: 24px;
+      height: 48px;
+      background-color: var(--Pink);
+      color: var(--White);
+      font-size: 24px;
+      margin-bottom: 8px;
+      transition-duration: 0.4s;
+      display: block;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.4s ease;
+    }
+    button:hover{
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+    }
+    .login-form-bottom-container{
+      position: absolute;
+      bottom: 48px;
+      span{
+        font-size: 12px;
+      }
+    }
+  }
+
+  .register-form-display-container{
+    overflow: auto;
+  }
+  .register-form{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 24px;
+    padding-left: 48px;
+    .register-form-names{
+      display: flex;
+      .lastname-group{
+        margin-left: 12px;
+      }
+    }
+    label{
+      font-family: 'MontserratMedium';
+      font-size: 16px;
+    }
+    input:focus{
+      outline: none;
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+      border: none;
+    }
+    input{
+      height: 40px;
+      border-radius: 24px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.4s ease;
+      background-color: var(--White);
+      font-size: 12px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      font-family: 'MontserratRegular';
+
+    }
+    button{
+      padding-left: 48px;
+      padding-right: 48px;
+      border: none;
+      border-radius: 24px;
+      height: 48px;
+      background-color: var(--Pink);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      transition: box-shadow 0.4s ease;
+      color: var(--White);
+      font-size: 24px;
+      display: block;
+      margin-bottom: 12px;
+      position: absolute;
+      bottom: 24px;
+      font-family: 'MontserratRegular';
+      text-align: center;
+      transition-duration: 0.4s;
+    }
+    button:hover{
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .btn-in-login-form-close{
+    width: 40px !important;
+    height: 40px  !important;
+    border-radius: 24px !important;
+    background-color: var(--LightGray) !important;
+    padding: 4.25px !important;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.4s ease;
+  }
+  .btn-in-login-form-close:hover{
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  @media only screen and (max-width:800px ){
+    .login-form-right-image{
+      display: none !important;
+    }
+    .login-form-bounder{
+      padding:24px;
+      padding-top: 48px;
+    }
+
+    #login-title{
+      font-size: 24px;
+    }
+    .login-form{
+      button{
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  
+    .register-form-display-container{
+      overflow: auto;
+    }
+    .register-form{
+      padding: 24px;
+      padding-top: 48px;
+    }
+  }
+
+  .mymodal::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .mymodal {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
