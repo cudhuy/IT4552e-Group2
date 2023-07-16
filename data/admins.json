@@ -1,0 +1,21 @@
+[
+	{
+		"_id": {
+			"$oid": "633e8c9141ca4bb25da2a950"
+		},
+		"email": "admin@vbook.com",
+		"password": "$2b$12$iR622fwnXNPCaolOidQ86uymlrtGFZx3dHwbYlmZh1soLvIcctM6C",
+		"avt": "/images/user1.png",
+		"createdAt": {
+			"$date": {
+				"$numberLong": "1686795807513"
+			}
+		},
+		"updatedAt": {
+			"$date": {
+				"$numberLong": "1686795807513"
+			}
+		},
+		"__v": 0
+	}
+]

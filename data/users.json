@@ -1,0 +1,88 @@
+[
+	{
+		"_id": {
+			"$oid": "633e8a4c2bd3c68881e53065"
+		},
+		"email": "tdhuy141vt@gmail.com",
+		"account": "tdhuy141vt",
+		"password": "$2b$12$dk/1gjoCCtKSQdcrcycVbOrkBCtsE74ShogGUqBBUx06T7QoVNxcG",
+		"avt": "/images/user1.png",
+		"createdAt": {
+			"$date": {
+				"$numberLong": "1687107651000"
+			}
+		},
+		"updatedAt": {
+			"$date": {
+				"$numberLong": "1687280400074"
+			}
+		},
+		"__v": 0,
+		"name": "Trần Đức Huy",
+		"phone": "0913227645"
+	},
+	{
+		"_id": {
+			"$oid": "633ec79ba83264b64cb46cf8"
+		},
+		"email": "huy141vt@gmail.com",
+		"account": "huy141vt",
+		"password": "$2b$12$dk/1gjoCCtKSQdcrcycVbOrkBCtsE74ShogGUqBBUx06T7QoVNxcG",
+		"avt": "/images/user1.png",
+		"createdAt": {
+			"$date": {
+				"$numberLong": "1687107608900"
+			}
+		},
+		"updatedAt": {
+			"$date": {
+				"$numberLong": "1687280400890"
+			}
+		},
+		"__v": 0,
+		"name": "Trần Đức Huy",
+		"phone": "0913226666"
+	},
+	{
+		"_id": {
+			"$oid": "638808d0d3cc5e0c397fd7be"
+		},
+		"email": "duc@gmail.com",
+		"account": "duc",
+		"password": "$2b$12$dk/1gjoCCtKSQdcrcycVbOrkBCtsE74ShogGUqBBUx06T7QoVNxcG",
+		"createdAt": {
+			"$date": {
+				"$numberLong": "1687107600190"
+			}
+		},
+		"updatedAt": {
+			"$date": {
+				"$numberLong": "1687280400015"
+			}
+		},
+		"__v": 0,
+		"name": "Trần Đức",
+		"phone": "0923456789"
+	},
+	{
+		"_id": {
+			"$oid": "63880919d3cc5e0c397fd7c2"
+		},
+		"email": "huytran@gmail.com",
+		"account": "huytran",
+		"password": "$2b$12$dk/1gjoCCtKSQdcrcycVbOrkBCtsE74ShogGUqBBUx06T7QoVNxcG",
+		"createdAt": {
+			"$date": {
+				"$numberLong": "1687107600000"
+			}
+		},
+		"updatedAt": {
+			"$date": {
+				"$numberLong": "1687280400001"
+			}
+		},
+		"__v": 0,
+		"name": "Trần Huy",
+		"phone": "0987654321"
+	}
+]
