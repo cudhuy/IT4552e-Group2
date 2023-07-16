@@ -7,7 +7,7 @@
 - Trần Đức Huy
 
 ## Topic: 
-- Will be update later
+- Create an online bookstore website following the model of Nha Nam bookstore (https://nhanam.vn/)
 
 ## Requirement:
 - Must commit to Git and its history is at least 2 months
@@ -19,5 +19,3 @@
 ## IDE
 - We have decided to use Visual Studio Code as our IDE because it is widely used and can be easily integrated with Git. You can download the installation file for your operating system (Windows, macOS, or Linux) from the official VSCode website (https://code.visualstudio.com/), and then follow the installation prompts to complete the process.
 
-## Usefull links:
-- Group 2 project board link: https://github.com/users/cudhuy/projects/1/views/2?layout=board
