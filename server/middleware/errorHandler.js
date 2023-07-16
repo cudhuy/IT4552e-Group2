@@ -9,7 +9,7 @@ exports.errorHandler = (err, req, res, next) => {
         }
     }
 
-    //objectID is not correct (4)
+    //objectID is not correct (4-5)
     if(err.kind == "ObjectId") {
         err.statusCode = 404;
         let errorId = req.originalUrl.split("/")[(req.originalUrl.split("/").length) - 1];
