@@ -73,6 +73,7 @@
 
 .cardImg {
 	width: 100%;
+	/* max-width: 100%; */
 	padding: 0 1.375rem;
 	transition: all 0.2s;
 }
@@ -148,12 +149,12 @@
 	.prodSold {
 		display: none;
 	}
-    .cardImg{
-        width: 10vmax;
-    }
+	.cardImg {
+		max-width: 100%;
+	}
 	.cardItem {
 		display: flex;
 		flex-wrap: wrap;
-        max-flex-wrap: 2;
+		max-flex-wrap: 2;
 	}
 }

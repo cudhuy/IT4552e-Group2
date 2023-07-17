@@ -82,4 +82,9 @@
     color:gray;
     margin-bottom: 0.5rem;
 }
+@media (max-width: 768px){
+  .input::placeholder {
+    display: none;
+  }
+}
 

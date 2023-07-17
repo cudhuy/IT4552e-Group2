@@ -124,3 +124,30 @@
 .starOption:hover > span {
     color: var(--primary-text);
 }
+/* Add a style for the popover content */
+.popoverContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* Add transition for smooth show/hide effect */
+.popoverContent {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.2s, visibility 0.2s, transform 0.2s;
+}
+
+/* Show the popover content when popoverVisible is true */
+.popoverContent.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+

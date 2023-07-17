@@ -63,6 +63,22 @@ function Search() {
 		}
 	};
 
+	useEffect(() => {
+		const handleWindowResize = () => {
+			const screenWidth = window.innerWidth;
+			setShowPlaceholder(screenWidth > 768);
+		};
+
+		handleWindowResize(); // Initial check
+		window.addEventListener('resize', handleWindowResize);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	}, []);
+
+	const [showPlaceholder, setShowPlaceholder] = useState(true);
+
 	return (
 		<div className={styles.container}>
 			<Tippy
@@ -86,7 +102,7 @@ function Search() {
 						ref={inputRef}
 						value={state.searchValue}
 						spellCheck={false}
-						placeholder='Bạn muốn tìm sách gì?'
+						placeholder={showPlaceholder ? 'Bạn muốn tìm sách gì?' : ''}
 						onChange={handleChance}
 						onFocus={() => setShowResult(true)}
 					/>

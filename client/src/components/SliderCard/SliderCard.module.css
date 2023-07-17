@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .custom-slick-slider-product .slick-slide {
+    padding: 0 10px;
+  }
+}

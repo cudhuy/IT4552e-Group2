@@ -5,7 +5,7 @@
 		},
 		"email": "tdhuy141vt@gmail.com",
 		"account": "tdhuy141vt",
-		"password": "$2b$12$dk/1gjoCCtKSQdcrcycVbOrkBCtsE74ShogGUqBBUx06T7QoVNxcG",
+		"password": "$2b$12$DzmxhtwkWOZqzA07srw0N.HPNtqBbtEFQBrBNRKOkC3ZwmamgUYQ6",
 		"avt": "/images/user1.png",
 		"createdAt": {
 			"$date": {
@@ -27,7 +27,7 @@
 		},
 		"email": "huy141vt@gmail.com",
 		"account": "huy141vt",
-		"password": "$2b$12$dk/1gjoCCtKSQdcrcycVbOrkBCtsE74ShogGUqBBUx06T7QoVNxcG",
+		"password": "$2b$12$DzmxhtwkWOZqzA07srw0N.HPNtqBbtEFQBrBNRKOkC3ZwmamgUYQ6",
 		"avt": "/images/user1.png",
 		"createdAt": {
 			"$date": {
@@ -49,7 +49,7 @@
 		},
 		"email": "duc@gmail.com",
 		"account": "duc",
-		"password": "$2b$12$dk/1gjoCCtKSQdcrcycVbOrkBCtsE74ShogGUqBBUx06T7QoVNxcG",
+		"password": "$$2b$12$DzmxhtwkWOZqzA07srw0N.HPNtqBbtEFQBrBNRKOkC3ZwmamgUYQ6",
 		"createdAt": {
 			"$date": {
 				"$numberLong": "1687107600190"
@@ -70,7 +70,7 @@
 		},
 		"email": "huytran@gmail.com",
 		"account": "huytran",
-		"password": "$2b$12$dk/1gjoCCtKSQdcrcycVbOrkBCtsE74ShogGUqBBUx06T7QoVNxcG",
+		"password": "$$2b$12$DzmxhtwkWOZqzA07srw0N.HPNtqBbtEFQBrBNRKOkC3ZwmamgUYQ6",
 		"createdAt": {
 			"$date": {
 				"$numberLong": "1687107600000"

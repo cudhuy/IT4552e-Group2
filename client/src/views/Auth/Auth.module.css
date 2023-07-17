@@ -190,3 +190,11 @@
     background-color: #1D9BF0;
 }
 
+@media (max-width: 768px){
+  .input::placeholder {
+    display: none;
+  }
+  .pageLogin{
+    width: 100%
+  }
+}

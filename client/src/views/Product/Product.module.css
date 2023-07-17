@@ -92,3 +92,35 @@
     border-radius: var(--border-radius);
 }
 
+@media (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .filterContainer {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .productContainer {
+        flex: 1;
+        margin-right: 0;
+    }
+
+    .filterContent {
+        position: relative; /* Remove sticky positioning on smaller screens */
+        top: initial;
+    }
+}
+
+/* Update the breadcrumb style for smaller screens */
+@media (max-width: 576px) {
+    .breadcrumbs > *:not(:last-child):after {
+        display: none; /* Hide the breadcrumb separator on smaller screens */
+    }
+
+    .breadcrumbs > *:last-child {
+        display: none; /* Hide the last breadcrumb element on smaller screens */
+    }
+}
