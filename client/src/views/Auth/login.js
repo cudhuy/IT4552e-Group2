@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
 
 import axios from 'axios';
 import {useStore} from '../../stores'
@@ -17,8 +16,6 @@ function Login() {
     const [state] = useStore();
     const [showPassword, setShowPassword] = useState(false);
     const [error, setError] = useState("")
-
-    const isMobile = useMediaQuery({ maxWidth: 768 });
 
     const navigate = useNavigate();
 
@@ -57,106 +54,87 @@ function Login() {
     })
 
     return (
-			<Container>
-				<Row>
-					{!isMobile && ( // Conditionally render the Col element only if it's not a mobile screen
-						<Col lg='6' className='flexbox-center'>
-							<img src='/images/logo-vbook.png' alt='' className='w-75' />
-						</Col>
-					)}
-					<Col lg='6' className={styles.pageLogin}>
-						<form
-							noValidate
-							onSubmit={formik.handleSubmit}
-							className={styles.formLogin}
-						>
-							<div className={styles.title}>Sign In</div>
+        <Container>
+            <Row>
+                <Col lg='6' className='flexbox-center'>
+                    <img src='/images/logo-vbook.png' alt='' className='w-75'/>
+                </Col>
+                <Col lg='6'>
+                    <form noValidate onSubmit={formik.handleSubmit} className={styles.formLogin}>
 
-							<div className={styles.inputContainer}>
-								<input
-									required
-									type='text'
-									name='account'
-									className={styles.input}
-									value={formik.values.account}
-									onChange={formik.handleChange}
-								/>
-								<span
-									className={styles.lable}
-									data-placeholder='Account'
-								></span>
-							</div>
-							{formik.errors.account && formik.touched.account && (
-								<div className={styles.validate}>{formik.errors.account}</div>
-							)}
+                        <div className={styles.title}>Sign In</div>
 
-							<div className={styles.inputContainer}>
-								<input
-									required
-									name='password'
-									type={showPassword ? 'text' : 'password'}
-									className={styles.input}
-									value={formik.values.password}
-									onChange={formik.handleChange}
-								/>
-								<span
-									className={styles.lable}
-									data-placeholder='Password'
-								></span>
-								<span
-									className={styles.btnShowPass}
-									onClick={() => setShowPassword(!showPassword)}
-								>
-									{showPassword ? (
-										<FAws icon={faEyeSlash} />
-									) : (
-										<FAws icon={faEye} />
-									)}
-								</span>
-							</div>
-							{formik.errors.password && formik.touched.password && (
-								<div className={styles.validate}>{formik.errors.password}</div>
-							)}
+                        <div className={styles.inputContainer}>
+                            <input
+                                required
+                                type="text"
+                                name="account"
+                                className={styles.input}
+                                value={formik.values.account}
+                                onChange={formik.handleChange}
+                            />
+                            <span className={styles.lable} data-placeholder="Account"></span>
+                        </div>
+                        {formik.errors.account && formik.touched.account && (
+                            <div className={styles.validate}>
+                                {formik.errors.account}
+                            </div>
+                        )}
 
-							<div className='text-end mt-1'>
-								<Link to='' className='default-link'>
-									Forgot Password?{' '}
-								</Link>
-							</div>
+                        <div className={styles.inputContainer}>
+                            <input
+                                required
+                                name="password"
+                                type={(showPassword) ? "text" : "password"}
+                                className={styles.input}
+                                value={formik.values.password}
+                                onChange={formik.handleChange}
+                            />
+                            <span className={styles.lable} data-placeholder="Password"></span>
+                            <span
+                                className={styles.btnShowPass}
+                                onClick={() => setShowPassword(!showPassword)}
+                            >
+                                {(showPassword) ? <FAws icon={faEyeSlash} /> : <FAws icon={faEye} />}
+                            </span>
+                        </div>
+                        {formik.errors.password && formik.touched.password && (
+                            <div className={styles.validate}>
+                                {formik.errors.password}
+                            </div>
+                        )}
 
-							<div className='mt-4'>
-								{error && <div className={styles.error}>{error}</div>}
-								<button type='submit' className={styles.btnSubmit}>
-									Sign In
-								</button>
-							</div>
+                        <div className='text-end mt-1'>
+                            <Link to='' className='default-link' >Forgot Password? </Link>
+                        </div>
 
-							<div className='text-center mt-2 mb-4'>
-								<span>Don't have an account? </span>
-								<Link to='/register' className={styles.link}>
-									Sign Up
-								</Link>
-							</div>
+                        <div className='mt-4'>
+                            {error && (
+                                <div className={styles.error}>
+                                    {error}
+                                </div>
+                            )}
+                            <button type='submit' className={styles.btnSubmit}>Sign In</button>
+                        </div>
 
-							<div className='text-center'>
-								<span className={styles.ortherLable}>Or</span>
-								<div>
-									<a href='/FB' className={styles.iconFacebook}>
-										<FAws icon={faFacebookF} />
-									</a>
-									<a href='/GG' className={styles.iconGoogle}>
-										<FAws icon={faGoogle} />
-									</a>
-									<a href='/TT' className={styles.iconTwitter}>
-										<FAws icon={faTwitter} />
-									</a>
-								</div>
-							</div>
-						</form>
-					</Col>
-				</Row>
-			</Container>
-		);
+                        <div className='text-center mt-2 mb-4'>
+                            <span>Don't have an account? </span>
+                            <Link to='/register' className={styles.link}>Sign Up</Link>
+                        </div>
+
+                        <div className='text-center'>
+                            <span className={styles.ortherLable}>Or</span>
+                            <div>
+                                <a href='/FB' className={styles.iconFacebook}><FAws icon={faFacebookF} /></a>
+                                <a href='/GG' className={styles.iconGoogle}><FAws icon={faGoogle} /></a>
+                                <a href='/TT' className={styles.iconTwitter}><FAws icon={faTwitter} /></a>
+                            </div>
+                        </div>
+                    </form>
+                </Col>
+            </Row>
+        </Container>
+    );
 }
 
 export default Login;
