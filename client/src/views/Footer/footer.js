@@ -14,7 +14,7 @@ function Footer() {
 						<Col lg={4}>
 							<img src='/images/logo-vbook.png' className='w-50 mb-2' alt='' />
 							<div>
-								<b>Địa chỉ: </b>Số 1 Đại Cồ Việt, phường Hai Bà Trưng, thành phố Hà Nội
+								<b>Địa chỉ: </b>Số 1 Đại Cồ Việt, phường Hai Bà Trưng, tp Hà Nội
 							</div>
 							<div>
 								<b>Hotline: </b>(+84)913227645
